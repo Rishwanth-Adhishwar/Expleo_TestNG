@@ -3,9 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.test.NewTest"/>
-      <class name="com.test.TestNgOrder_Run"/>
-      <class name="com.test.TestNG_Demo"/>
       <class name="com.test.DataProviderDemo1"/>
     </classes>
   </test> <!-- Test -->

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-20T12:26:14 IST" name="TestNG Parameters suite" finished-at="2026-04-20T12:26:14 IST" duration-ms="43">
+    <groups>
+    </groups>
+    <test started-at="2026-04-20T12:26:14 IST" name="Params" finished-at="2026-04-20T12:26:14 IST" duration-ms="43">
+      <class name="parameterization.demo.dummy.Params">
+        <test-method signature="Sum(int,int)[pri:0, instance:parameterization.demo.dummy.Params@4562e04d]" started-at="2026-04-20T12:26:14 IST" name="Sum" finished-at="2026-04-20T12:26:14 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sum -->
+        <test-method signature="Sum1(int,int)[pri:0, instance:parameterization.demo.dummy.Params@4562e04d]" started-at="2026-04-20T12:26:14 IST" name="Sum1" finished-at="2026-04-20T12:26:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sum1 -->
+      </class> <!-- parameterization.demo.dummy.Params -->
+    </test> <!-- Params -->
+  </suite> <!-- TestNG Parameters suite -->
+</testng-results>

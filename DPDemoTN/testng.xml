@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test thread-count="5" name="Test">
+		<parameter name="wordv" value="mac"></parameter>
+		<parameter name="wordiv" value="kiot"></parameter>
+
+		<classes>
+			<class name="com.test.LoginTestDP" />
+			<class name="com.utils.ExcelDP" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

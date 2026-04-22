@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="wordiv" value="kiot"/>
+  <parameter name="wordv" value="mac"/>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="wordiv" value="kiot"/>
-    <parameter name="wordv" value="mac"/>
     <classes>
       <class name="com.test.LoginTestDP">
         <methods>
-          <include name="validLogin"/>
-          <include name="searchValid" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="invalidLogin"/>
+          <include name="invalidLogin" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.test.LoginTestDP -->
     </classes>

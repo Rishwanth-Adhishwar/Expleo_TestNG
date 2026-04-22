@@ -103,12 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.LoginTestDP" class="method navigator-link" hash-for-method="invalidLogin(mp3gaming12@gmail.com, a1234)">invalidLogin(mp3gaming12@gmail.com, a1234)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.LoginTestDP" class="method navigator-link" hash-for-method="invalidLogin(abc@gmail.com, ra123)">invalidLogin(abc@gmail.com, ra123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.LoginTestDP" class="method navigator-link" hash-for-method="invalidLogin(abc@gmail.com, ra123)">invalidLogin(abc@gmail.com, ra123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.LoginTestDP" class="method navigator-link" hash-for-method="invalidLogin(mp3gaming12@gmail.com, a1234)">invalidLogin(mp3gaming12@gmail.com, a1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -146,18 +146,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidLogin(mp3gaming12@gmail.com, a1234)">
-                  </a> <!-- invalidLogin(mp3gaming12@gmail.com, a1234) -->
-                  <span class="method-name">invalidLogin</span>
-                  <span class="parameters">(mp3gaming12@gmail.com,a1234)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="invalidLogin(abc@gmail.com, ra123)">
                   </a> <!-- invalidLogin(abc@gmail.com, ra123) -->
                   <span class="method-name">invalidLogin</span>
                   <span class="parameters">(abc@gmail.com,ra123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLogin(mp3gaming12@gmail.com, a1234)">
+                  </a> <!-- invalidLogin(mp3gaming12@gmail.com, a1234) -->
+                  <span class="method-name">invalidLogin</span>
+                  <span class="parameters">(mp3gaming12@gmail.com,a1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -196,9 +196,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;wordiv&quot; value=&quot;kiot&quot;/&gt;
+  &lt;parameter name=&quot;wordv&quot; value=&quot;mac&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;wordiv&quot; value=&quot;kiot&quot;/&gt;
-    &lt;parameter name=&quot;wordv&quot; value=&quot;mac&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.test.LoginTestDP&quot;/&gt;
       &lt;class name=&quot;com.utils.ExcelDP&quot;/&gt;
@@ -245,28 +245,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'invalidLogin')
 data.setCell(0, 2, 'com.test.LoginTestDP')
-data.setCell(0, 3, 2509);
+data.setCell(0, 3, 3024);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'invalidLogin')
 data.setCell(1, 2, 'com.test.LoginTestDP')
-data.setCell(1, 3, 2387);
+data.setCell(1, 3, 2781);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validLogin')
 data.setCell(2, 2, 'com.test.LoginTestDP')
-data.setCell(2, 3, 2251);
+data.setCell(2, 3, 2246);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'searchValid')
+data.setCell(3, 1, 'searchInValid')
 data.setCell(3, 2, 'com.test.LoginTestDP')
-data.setCell(3, 3, 1729);
+data.setCell(3, 3, 974);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchInValid')
+data.setCell(4, 1, 'searchValid')
 data.setCell(4, 2, 'com.test.LoginTestDP')
-data.setCell(4, 3, 1213);
+data.setCell(4, 3, 939);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -297,61 +297,61 @@ return data;
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLogin(mp3gaming12@gmail.com, ra123)</span>
+                <span class="method-start">991 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">3241 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">3500 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3501 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidLogin(mp3gaming12@gmail.com, a1234)</span>
-                <span class="method-start">1112 ms</span>
+                <span class="method-start">4256 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">invalidLogin(abc@gmail.com, ra123)</span>
-                <span class="method-start">1112 ms</span>
+                <span class="method-start">4256 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3503 ms</span>
+                <span class="method-start">7039 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3624 ms</span>
+                <span class="method-start">7282 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3911 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchInValid(kiot)</span>
-                <span class="method-start">4649 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">5863 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">6048 ms</span>
+                <span class="method-start">7435 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchValid(mac)</span>
-                <span class="method-start">6696 ms</span>
+                <span class="method-start">8189 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8426 ms</span>
+                <span class="method-start">9130 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8578 ms</span>
+                <span class="method-start">9277 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validLogin(mp3gaming12@gmail.com, ra123)</span>
-                <span class="method-start">9238 ms</span>
+                <span class="method-name">searchInValid(kiot)</span>
+                <span class="method-start">9935 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11490 ms</span>
+                <span class="method-start">10911 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -20,7 +20,7 @@ public class ExcelDP {
 
     public static Object[][] excelDataProvider(String sheetName) throws IOException {
 
-        String path = "D:\\Selinium_Automation\\DPDemoTN\\src\\test\\resources\\tutorialsDemoTestDatas.xlsx";
+        String path = "C:\\Users\\krish\\git\\testng\\DPDemoTN\\src\\test\\resources\\tutorialsDemoTestDatas.xlsx";
 
         return getExcelData(path, sheetName);
     }

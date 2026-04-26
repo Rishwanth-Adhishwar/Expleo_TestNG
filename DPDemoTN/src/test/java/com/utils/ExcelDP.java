@@ -34,7 +34,7 @@ public class ExcelDP {
         DataFormatter formatter = new DataFormatter();
         for (int i = 1; i < noOfRows; i++) {
             XSSFRow row = sheet.getRow(i);
-            for (int j = 0; j < noOfCols; j++) {
+            for (int j = 0; j < noOfCols;		 j++) {
                 Cell cell = row.getCell(j);
                 data[i - 1][j] = formatter.formatCellValue(cell);
             }

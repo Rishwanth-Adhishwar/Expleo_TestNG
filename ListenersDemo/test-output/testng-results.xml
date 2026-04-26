@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-24T20:37:56 IST" name="Suite" finished-at="2026-04-24T20:38:16 IST" duration-ms="19382">
+    <groups>
+    </groups>
+    <test started-at="2026-04-24T20:37:56 IST" name="Test" finished-at="2026-04-24T20:38:16 IST" duration-ms="19382">
+      <class name="com.test.LoginDemo">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.test.LoginDemo@14fc1f0]" started-at="2026-04-24T20:37:57 IST" name="beforeMethod" finished-at="2026-04-24T20:37:59 IST" duration-ms="1978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="vCase(java.lang.String,java.lang.String)[pri:1, instance:com.test.LoginDemo@14fc1f0]" started-at="2026-04-24T20:37:59 IST" name="vCase" data-provider="vdatas" finished-at="2026-04-24T20:38:06 IST" duration-ms="6529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mp3gaming12@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ra123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.test.LoginDemo@14fc1f0]" started-at="2026-04-24T20:38:06 IST" name="afterMethod" finished-at="2026-04-24T20:38:06 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.test.LoginDemo@14fc1f0]" started-at="2026-04-24T20:38:06 IST" name="beforeMethod" finished-at="2026-04-24T20:38:08 IST" duration-ms="1734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.test.LoginDemo@14fc1f0]" started-at="2026-04-24T20:38:06 IST" name="beforeMethod" finished-at="2026-04-24T20:38:08 IST" duration-ms="1713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ivCase(java.lang.String,java.lang.String)[pri:2, instance:com.test.LoginDemo@14fc1f0]" started-at="2026-04-24T20:38:08 IST" name="ivCase" data-provider="ivdatas" finished-at="2026-04-24T20:38:13 IST" duration-ms="4770" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mp3gaming12@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aa123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Warning: No match for  Address and/or Password.] but found [Warning: No match for E-Mail Address and/or Password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Warning: No match for  Address and/or Password.] but found [Warning: No match for E-Mail Address and/or Password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.test.LoginDemo.ivCase(LoginDemo.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ivCase -->
+        <test-method signature="ivCase(java.lang.String,java.lang.String)[pri:2, instance:com.test.LoginDemo@14fc1f0]" started-at="2026-04-24T20:38:08 IST" name="ivCase" data-provider="ivdatas" finished-at="2026-04-24T20:38:15 IST" duration-ms="7140" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ra123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Warning: No match for  Address and/or Password.] but found [Warning: No match for E-Mail Address and/or Password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Warning: No match for  Address and/or Password.] but found [Warning: No match for E-Mail Address and/or Password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.test.LoginDemo.ivCase(LoginDemo.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ivCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.test.LoginDemo@14fc1f0]" started-at="2026-04-24T20:38:13 IST" name="afterMethod" finished-at="2026-04-24T20:38:14 IST" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.test.LoginDemo@14fc1f0]" started-at="2026-04-24T20:38:15 IST" name="afterMethod" finished-at="2026-04-24T20:38:16 IST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.test.LoginDemo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

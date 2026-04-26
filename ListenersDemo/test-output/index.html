@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\krish\git\testng\DPDemoTN\testng.xml</span>
+                    <span>D:\Selinium_Automation\ListenersDemo\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.LoginTestDP" class="method navigator-link" hash-for-method="searchValid(mac)">searchValid(mac)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.LoginDemo" class="method navigator-link" hash-for-method="ivCase(mp3gaming12@gmail.com, aa123)">ivCase(mp3gaming12@gmail.com, aa123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.LoginDemo" class="method navigator-link" hash-for-method="ivCase(123@gmail.com, ra123)">ivCase(123@gmail.com, ra123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,22 +122,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.LoginTestDP" class="method navigator-link" hash-for-method="invalidLogin(abc@gmail.com, ra123)">invalidLogin(abc@gmail.com, ra123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.LoginTestDP" class="method navigator-link" hash-for-method="invalidLogin(mp3gaming12@gmail.com, a1234)">invalidLogin(mp3gaming12@gmail.com, a1234)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.LoginTestDP" class="method navigator-link" hash-for-method="searchInValid(kiot)">searchInValid(kiot)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.LoginTestDP" class="method navigator-link" hash-for-method="validLogin(mp3gaming12@gmail.com, ra123)">validLogin(mp3gaming12@gmail.com, ra123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.LoginDemo" class="method navigator-link" hash-for-method="vCase(mp3gaming12@gmail.com, ra123)">vCase(mp3gaming12@gmail.com, ra123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -150,19 +140,36 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.test.LoginTestDP</span>
+              <span class="class-name">com.test.LoginDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchValid(mac)">
-                  </a> <!-- searchValid(mac) -->
-                  <span class="method-name">searchValid</span>
-                  <span class="parameters">(mac)</span>
-                  <div class="stack-trace">java.lang.AssertionError: Products Found expected [true] but found [false]
-	at com.test.LoginTestDP.searchValid(LoginTestDP.java:103)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames
+                  <a name="ivCase(mp3gaming12@gmail.com, aa123)">
+                  </a> <!-- ivCase(mp3gaming12@gmail.com, aa123) -->
+                  <span class="method-name">ivCase</span>
+                  <span class="parameters">(mp3gaming12@gmail.com,aa123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Warning: No match for  Address and/or Password.] but found [Warning: No match for E-Mail Address and/or Password.]
+	at com.test.LoginDemo.ivCase(LoginDemo.java:79)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ivCase(123@gmail.com, ra123)">
+                  </a> <!-- ivCase(123@gmail.com, ra123) -->
+                  <span class="method-name">ivCase</span>
+                  <span class="parameters">(123@gmail.com,ra123)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Warning: No match for  Address and/or Password.] but found [Warning: No match for E-Mail Address and/or Password.]
+	at com.test.LoginDemo.ivCase(LoginDemo.java:79)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -171,38 +178,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.test.LoginTestDP</span>
+              <span class="class-name">com.test.LoginDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidLogin(abc@gmail.com, ra123)">
-                  </a> <!-- invalidLogin(abc@gmail.com, ra123) -->
-                  <span class="method-name">invalidLogin</span>
-                  <span class="parameters">(abc@gmail.com,ra123)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidLogin(mp3gaming12@gmail.com, a1234)">
-                  </a> <!-- invalidLogin(mp3gaming12@gmail.com, a1234) -->
-                  <span class="method-name">invalidLogin</span>
-                  <span class="parameters">(mp3gaming12@gmail.com,a1234)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchInValid(kiot)">
-                  </a> <!-- searchInValid(kiot) -->
-                  <span class="method-name">searchInValid</span>
-                  <span class="parameters">(kiot)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validLogin(mp3gaming12@gmail.com, ra123)">
-                  </a> <!-- validLogin(mp3gaming12@gmail.com, ra123) -->
-                  <span class="method-name">validLogin</span>
+                  <a name="vCase(mp3gaming12@gmail.com, ra123)">
+                  </a> <!-- vCase(mp3gaming12@gmail.com, ra123) -->
+                  <span class="method-name">vCase</span>
                   <span class="parameters">(mp3gaming12@gmail.com,ra123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -211,19 +194,19 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\krish\git\testng\DPDemoTN\testng.xml</span>
+            <span class="header-content">D:\Selinium_Automation\ListenersDemo\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;wordiv&quot; value=&quot;kiot&quot;/&gt;
-  &lt;parameter name=&quot;wordv&quot; value=&quot;mac&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.listeners.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.test.LoginTestDP&quot;/&gt;
-      &lt;class name=&quot;com.utils.ExcelDP&quot;/&gt;
+      &lt;class name=&quot;com.test.LoginDemo&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -237,7 +220,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,32 +246,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'invalidLogin')
-data.setCell(0, 2, 'com.test.LoginTestDP')
-data.setCell(0, 3, 3175);
+data.setCell(0, 1, 'ivCase')
+data.setCell(0, 2, 'com.test.LoginDemo')
+data.setCell(0, 3, 7140);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'invalidLogin')
-data.setCell(1, 2, 'com.test.LoginTestDP')
-data.setCell(1, 3, 2966);
+data.setCell(1, 1, 'vCase')
+data.setCell(1, 2, 'com.test.LoginDemo')
+data.setCell(1, 3, 6529);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validLogin')
-data.setCell(2, 2, 'com.test.LoginTestDP')
-data.setCell(2, 3, 1994);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'searchInValid')
-data.setCell(3, 2, 'com.test.LoginTestDP')
-data.setCell(3, 3, 1158);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchValid')
-data.setCell(4, 2, 'com.test.LoginTestDP')
-data.setCell(4, 3, 1035);
+data.setCell(2, 1, 'ivCase')
+data.setCell(2, 2, 'com.test.LoginDemo')
+data.setCell(2, 3, 4770);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -314,68 +289,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.LoginTestDP</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.test.LoginDemo</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
+                <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validLogin(mp3gaming12@gmail.com, ra123)</span>
-                <span class="method-start">1021 ms</span>
+                <span class="method-name">vCase(mp3gaming12@gmail.com, ra123)</span>
+                <span class="method-start">1980 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">3023 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">8520 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">3196 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">9009 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">3196 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">invalidLogin(mp3gaming12@gmail.com, a1234)</span>
-                <span class="method-start">4011 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">invalidLogin(abc@gmail.com, ra123)</span>
-                <span class="method-start">4012 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">6978 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">7188 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">7326 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">9010 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">searchValid(mac)</span>
-                <span class="method-start">7999 ms</span>
+                <span class="method-name">ivCase(mp3gaming12@gmail.com, aa123)</span>
+                <span class="method-start">10723 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">9037 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">9180 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">searchInValid(kiot)</span>
-                <span class="method-start">9824 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ivCase(123@gmail.com, ra123)</span>
+                <span class="method-start">10743 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">10983 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">15954 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">18240 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -100,7 +100,7 @@ public class LoginTestDP {
 		String actual = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(
 				"div[id='content'] div:nth-child(1) div:nth-child(1) div:nth-child(2) div:nth-child(1) h4:nth-child(1) a:nth-child(1)")))
 				.getText();
-		Assert.assertEquals(actual.contains("mac"), false, "Products Found");
+		Assert.assertEquals(actual.contains("mac"),false, "Products Found");
 	}
 
 	@Parameters({ "wordiv" })

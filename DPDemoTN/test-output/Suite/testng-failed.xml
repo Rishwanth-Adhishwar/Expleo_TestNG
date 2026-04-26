@@ -7,9 +7,9 @@
     <classes>
       <class name="com.test.LoginTestDP">
         <methods>
+          <include name="searchValid" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="invalidLogin" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.test.LoginTestDP -->
     </classes>

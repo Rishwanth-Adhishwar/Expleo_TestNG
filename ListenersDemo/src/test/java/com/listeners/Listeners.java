@@ -43,7 +43,7 @@ public class Listeners extends LoginDemo implements ITestListener{
 		WebDriver driver=driver1.get();
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		File file=ts.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(file,new File("D:\\Selinium_Automation\\ListenersDemo\\screenshots\\"+name+".jpg"));
+		FileUtils.copyFile(file,new File("C:\\Users\\krish\\git\\testng\\ListenersDemo\\screenshots\\"+name+".jpg"));
 		System.out.println("ScreenShot Captured on fails");
 	}
 

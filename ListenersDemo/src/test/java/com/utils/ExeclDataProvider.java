@@ -27,7 +27,7 @@ public class ExeclDataProvider {
 	
 	public static Object[][] exceldataProvider(String sheet) throws IOException
 	{
-		String path="D:\\Selinium_Automation\\ListenersDemo\\src\\test\\resources\\tnTestData.xlsx";
+		String path="C:\\Users\\krish\\git\\testng\\ListenersDemo\\src\\test\\resources\\tnTestData.xlsx";
 		return exceldataReader(path,sheet);
 	}
 	public static Object[][] exceldataReader(String file,String Sheet) throws IOException

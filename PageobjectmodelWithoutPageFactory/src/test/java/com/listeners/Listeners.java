@@ -1,21 +1,18 @@
 package com.listeners;
 
 import java.io.File;
-
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.test.LoginDemo;
+import com.tests.BaseTest;
 
-
-public class Listeners extends LoginDemo implements ITestListener{
+public class Listeners extends BaseTest implements ITestListener {
 	
 	public void onTestStart(ITestResult result)
 	{
@@ -41,11 +38,11 @@ public class Listeners extends LoginDemo implements ITestListener{
 	
 	public void captureScreenshot(String name) throws IOException
 	{
-		WebDriver driver=driver1.get();
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		File file=ts.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(file,new File("C:\\Users\\krish\\git\\testng\\ListenersDemo\\screenshots\\"+name+".jpg"));
 		System.out.println("ScreenShot Captured on fails");
 	}
+
 
 }

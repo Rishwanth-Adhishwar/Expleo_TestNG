@@ -39,7 +39,7 @@ public class DpExcel {
 
 	private static Object[][] getExcelData(String file, String sheetName) throws IOException {
 		// TODO Auto-generated method stub
-		String[][] data = null;
+		Object[][] data = null;
 
 		try {
 			FileInputStream fis = new FileInputStream(file);
